@@ -1,2 +1,43 @@
 # FindAFriend-API
- Software para adoção de Pets, desenvolvido para o desadio do módulo 3 do curso de Node da RocketSeat
+ API desenvolvida para o desafio do módulo 3 do curso de Node da RocketSeat
+
+# App
+
+App para adoção de Animais.
+
+## Tecnologias
+- NodeJS
+- NPM
+- ESLint
+- Vitest
+- TypeScript
+- Fastify
+- Prisma
+- PostgreSQL
+- Docker
+- JWT
+- GitHub Actions
+
+## RFs (Requisitos Funcionais)
+
+- [ ] - Deve ser possível cadastrar um pet;
+- [ ] - Deve ser possível listar todos os pets disponíveis para adoção em uma cidade;
+- [ ] - Deve ser possível filtrar pets por suas características;
+- [ ] - Deve ser possível visualizar detalhes de um pet para adoção;
+- [ ] - Deve ser possível se cadastrar como uma ORG;
+- [ ] - Deve ser possível realizar login como uma ORG;
+
+## RNs (Regras de negócio)
+
+- [ ] - Para listar os pets, obrigatoriamente precisamos informar a cidade;
+- [ ] - Uma ORG precisa ter um endereço e um número de WhatsApp;
+- [ ] - Um pet deve estar ligado a uma ORG;
+- [ ] - O usuário que quer adotar, entrará em contato com a ORG via WhatsApp;
+- [ ] - Todos os filtros, além da cidade, são opcionais;
+- [ ] - Para uma ORG acessar a aplicação como admin, ela precisa estar logada;
+
+## RNFs (Requisitos não funcionais)
+
+- [ ] A senha do usuário precisa estar criptografada;
+- [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
+- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
