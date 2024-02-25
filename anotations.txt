@@ -1,6 +1,0 @@
--- Como subir um banco de dados PostgreSQL no Docker
-
-docker run --name name-api -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apidatabasename -p 5432:5432 bitnami/postgresql
-
--- Criar o arquivo tsconfig.json
-
