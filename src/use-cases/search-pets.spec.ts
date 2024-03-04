@@ -157,7 +157,6 @@ describe('Search Pets Use Case', () => {
       age: '2 years',
       size: 'Adult',
     })
-    console.log({ pets })
 
     expect(pets).toHaveLength(2)
   })

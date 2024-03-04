@@ -4,6 +4,7 @@ import { OrgsRepository } from '@/repositories/orgs-repository'
 import { OrgNotFoundError } from './errors/org-not-found-error'
 
 interface RegisterPetUseCaseRequest {
+  id?: string
   name: string
   about: string
   age: string
@@ -25,6 +26,7 @@ export class RegisterPetUseCase {
   ) {}
 
   async execute({
+    id,
     name,
     about,
     age,
@@ -41,6 +43,7 @@ export class RegisterPetUseCase {
     }
 
     const pet = await this.petsRepository.create({
+      id,
       name,
       about,
       age,
