@@ -3,11 +3,11 @@ import { PetsRepository } from '@/repositories/pets-repository'
 
 interface SearchPetsUseCaseRequest {
   city: string
-  age?: string
-  size?: string
-  independency_level?: string
-  energy_level?: string
-  environment?: string
+  age?: string | null
+  size?: string | null
+  independency_level?: string | null
+  energy_level?: string | null
+  environment?: string | null
 }
 interface SearchPetsUseCaseResponse {
   pets: Pet[]
@@ -26,11 +26,12 @@ export class SearchPetsUseCase {
   }: SearchPetsUseCaseRequest): Promise<SearchPetsUseCaseResponse> {
     const pets = await this.petsRepository.findAll({
       city,
-      age,
-      size,
-      independency_level,
-      energy_level,
-      environment,
+      age: age !== null ? age : undefined,
+      size: size !== null ? size : undefined,
+      independency_level:
+        independency_level !== null ? independency_level : undefined,
+      energy_level: energy_level !== null ? energy_level : undefined,
+      environment: environment !== null ? environment : undefined,
     })
 
     return {

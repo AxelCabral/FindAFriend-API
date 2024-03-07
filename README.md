@@ -25,7 +25,7 @@ App para adoção de Animais.
 - [X] - Deve ser possível filtrar pets por suas características;
 - [X] - Deve ser possível visualizar detalhes de um pet para adoção;
 - [X] - Deve ser possível se cadastrar como uma ORG;
-- [ ] - Deve ser possível realizar login como uma ORG;
+- [X] - Deve ser possível realizar login como uma ORG;
 
 ## RNs (Regras de negócio)
 
@@ -34,10 +34,10 @@ App para adoção de Animais.
 - [X] - Um pet deve estar ligado a uma ORG;
 - [X] - O usuário que quer adotar, entrará em contato com a ORG via WhatsApp;
 - [X] - Todos os filtros, além da cidade, são opcionais;
-- [ ] - Para uma ORG acessar a aplicação como admin, ela precisa estar logada;
+- [X] - Para uma ORG acessar a aplicação como admin, ela precisa estar logada;
 
 ## RNFs (Requisitos não funcionais)
 
 - [X] A senha do usuário precisa estar criptografada;
 - [X] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [X] O usuário deve ser identificado por um JWT (JSON Web Token);

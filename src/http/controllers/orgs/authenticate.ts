@@ -42,7 +42,7 @@ export async function authenticate(
         sameSite: true,
         httpOnly: true,
       })
-      .status(200)
+      .status(201)
       .send({
         token,
       })
