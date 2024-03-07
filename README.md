@@ -1,4 +1,5 @@
 # FindAFriend-API
+
  API desenvolvida para o desafio do módulo 3 do curso de Node da RocketSeat
 
 # App
@@ -6,6 +7,7 @@
 App para adoção de Animais.
 
 ## Tecnologias
+
 - NodeJS
 - NPM
 - ESLint
